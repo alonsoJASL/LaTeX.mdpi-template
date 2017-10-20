@@ -1,0 +1,16 @@
+*.asv
+*.aux
+
+*.bbl
+
+*.blg
+
+*.log
+
+*.out
+
+*.suc
+
+*.syc
+
+*.gz

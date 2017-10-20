@@ -1,0 +1,27 @@
+\vspace{-1em}
+\section{DISCUSSION}\label{sec:discussion}
+\vspace{-0.25em}
+Preliminary work involving curve evolution methods such as multilevel set
+methods \cite{lu2015} and active contours \cite{chanvese} have proven unsuccessful
+to segment even non overlapping cells in the analysis of a single frame.
+Such techniques require considerable precision when selecting the parameters,
+especially when selecting the initialisation given to the algorithms.
+In this work, a method to segment moving cells
+%based on active contours
+was proposed.
+
+The main contribution was to provide a framework for the consistent tracking of
+the shape of a cell and provide a measured evolution of some shape parameters.
+As shown in Figure \ref{fig:res-all}, the similarity of the previous frame to the
+current is enough to provide an appropriate initialisation for the active
+contours, however, as shown in Table \ref{tab:acparams}, monitoring of the shape
+is necessary to avoid segmentation leaking.
+A new implementation of the \emph{anglegram} matrix allowed for the analysis
+of a single cell with a straightforward identification of corners in the shapes.
+Future developments involve extending the shape tracking into overlapping cells
+to disambiguate them.
+Furthermore, as seen in Figure \ref{fig:agshapes}, the distinctive patterns of
+the anglegrams corresponding to the basic shapes, could be further explored
+into a classification problem for shape identification or correction of
+irregular segmentations.
+\vspace{-0.5em}
